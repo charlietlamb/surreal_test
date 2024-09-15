@@ -32,10 +32,10 @@ struct Record {
 async fn main() -> surrealdb::Result<()> {
     //Connect to the server
     let db = Surreal::new::<Ws>("127.0.0.1:8000").await?;
-    db.signin(Root {
+    /*db.signin(Root {
         username: "root",
         password: "root",
-    }).await?;
+    }).await?;*/
     
     Ok(())
 }
